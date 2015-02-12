@@ -1,0 +1,8 @@
+hugo
+git add -A
+
+git commit -m " update 003 whatever"
+
+git push origin master
+
+git subtree push --prefix=public git@github.com:roboticbentqueryicoatbog/sec.git gh-pages

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 
+
+    <title>second - http://roboticbentqueryicoatbog.github.io/sec</title>
+    <link rel="canonical" href="http://roboticbentqueryicoatbog.github.io/sec/cata/second/">
+  
+  	<link href="http://roboticbentqueryicoatbog.github.io/sec/css/bootstrap.css" rel="stylesheet">
+<link href="http://roboticbentqueryicoatbog.github.io/sec/css/font-awesome.css" rel="stylesheet">
+<link href="http://roboticbentqueryicoatbog.github.io/sec/css/custom.css" rel="stylesheet">
+  
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://roboticbentqueryicoatbog.github.io/sec">Accueil</a></li>
+                    <li><a href="http://roboticbentqueryicoatbog.github.io/sec/cata/presentation">Catalogue</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="well well-sm">
+                    <h3>second<br> <small></small></h3>
+                    <hr>
+                    
+
+<h3 id="toc_0">TOML Example</h3>
+
+<pre><code>+++
+title = &quot;spf13-vim 3.0 release and new website&quot;
+description = &quot;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&quot;
+tags = [ &quot;.vimrc&quot;, &quot;plugins&quot;, &quot;spf13-vim&quot;, &quot;vim&quot; ]
+date = &quot;2012-04-06&quot;
+categories = [
+  &quot;Development&quot;,
+  &quot;VIM&quot;
+]
+slug = &quot;spf13-vim-3-0-release-and-new-website&quot;
++++
+
+Content of the file goes Here
+</code></pre>
+
+<h3 id="toc_1">YAML Example</h3>
+
+<pre><code>---
+title: &quot;spf13-vim 3.0 release and new website&quot;
+description: &quot;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&quot;
+tags: [ &quot;.vimrc&quot;, &quot;plugins&quot;, &quot;spf13-vim&quot;, &quot;vim&quot; ]
+date: &quot;2012-04-06&quot;
+categories:
+  - &quot;Development&quot;
+  - &quot;VIM&quot;
+slug: &quot;spf13-vim-3-0-release-and-new-website&quot;
+---
+
+Content of the file goes Here
+</code></pre>
+
+<h3 id="toc_2">JSON Example</h3>
+
+<pre><code>{
+    &quot;title&quot;: &quot;spf13-vim 3.0 release and new website&quot;,
+    &quot;description&quot;: &quot;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&quot;,
+    &quot;tags&quot;: [ &quot;.vimrc&quot;, &quot;plugins&quot;, &quot;spf13-vim&quot;, &quot;vim&quot; ],
+    &quot;date&quot;: &quot;2012-04-06&quot;,
+    &quot;categories&quot;: [
+        &quot;Development&quot;,
+        &quot;VIM&quot;
+    ],
+    &quot;slug&quot;: &quot;spf13-vim-3-0-release-and-new-website&quot;,
+}
+
+Content of the file goes Here
+</code></pre>
+
+<h2 id="toc_3">Variables</h2>
+
+<p>There are a few predefined variables that Hugo is aware of and utilizes. The user can also create
+any variable they want to. These will be placed into the <code>.Params</code> variable available to the templates.
+Field names are always normalized to lowercase (e.g. <code>camelCase: true</code> is available as <code>.Params.camelcase</code>).</p>
+
+<h3 id="toc_4">Required variables</h3>
+
+<ul>
+<li><strong>title</strong> The title for the content</li>
+<li><strong>description</strong> The description for the content</li>
+<li><strong>date</strong> The date the content will be sorted by</li>
+<li><strong>taxonomies</strong> These will use the field name of the plural form of the index (see tags and categories above)</li>
+</ul>
+
+<h3 id="toc_5">Optional variables</h3>
+
+<ul>
+<li><strong>redirect</strong> Mark the post as a redirect post</li>
+<li><strong>draft</strong> If true, the content will not be rendered unless <code>hugo</code> is called with <code>--buildDrafts</code></li>
+<li><strong>publishdate</strong> If in the future, content will not be rendered unless <code>hugo</code> is called with <code>--buildFuture</code></li>
+<li><strong>type</strong> The type of the content (will be derived from the directory automatically if unset)</li>
+<li><strong>weight</strong> Used for sorting</li>
+<li><strong>markup</strong> <em>(Experimental)</em> Specify <code>&quot;rst&quot;</code> for reStructuredText (requires
+        <code>rst2html</code>) or <code>&quot;md&quot;</code> (default) for Markdown</li>
+<li><strong>slug</strong> The token to appear in the tail of the URL,
+<em>or</em><br></li>
+<li><strong>url</strong> The full path to the content from the web root.<br></li>
+</ul>
+
+<p><em>If neither <code>slug</code> or <code>url</code> is present, the filename will be used.</em></p>
+
+<h2 id="toc_6">Configure Blackfriday rendering</h2>
+
+<p>It&rsquo;s possible to set some options for Markdown rendering in the page&rsquo;s front matter, as an override to the site wide configuration.</p>
+
+<p>See <a href="{{&lt; ref &quot;overview/configuration.md#configure-blackfriday-rendering&quot; &gt;}}">Configuration</a> for more.</p>
+
+            </div>
+        </div>
+
+       
+    </div>
+
+</div>
+
+   <script src="http://roboticbentqueryicoatbog.github.io/sec/js/jquery.js"></script>
+    <script src="http://roboticbentqueryicoatbog.github.io/sec/js/bootstrap.js"></script>
+</body>
+</html>

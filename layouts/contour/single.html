@@ -1,13 +1,10 @@
-{{ partial "header.html" . }}
-<body>
-{{ partial "navbar.html" . }}
 <div class="container">
     <div class="row">
         <div class="col-md-9">
             <div class="well well-sm">
                     <h3>{{ .Title }}<br> <small>{{ .Description }}</small></h3>
                     <hr>
-                    {{ .Content }}
+                    {{ .Content.presentation.md  }}
             </div>
         </div>
 
@@ -15,5 +12,3 @@
     </div>
 
 </div>
-
-{{ partial "footer.html" . }}

@@ -1,9 +1,8 @@
 +++
 date = "2015-01-23T11:34:59+01:00"
+draft = true
+title = "first"
 
-title = "presentation"
-categories = ["catalogue"]
-categories_weight = 10
 +++
 
 The **front matter** is one of the features that gives Hugo its strength. It enables

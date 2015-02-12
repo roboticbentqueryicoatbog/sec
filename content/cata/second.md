@@ -1,24 +1,10 @@
 +++
 date = "2015-01-23T11:34:59+01:00"
 
-title = "presentation"
+title = "second"
 categories = ["catalogue"]
-categories_weight = 10
+categories_weight = 11
 +++
-
-The **front matter** is one of the features that gives Hugo its strength. It enables
-you to include the meta data of the content right with it. Hugo supports a few
-different formats, each with their own identifying tokens.
-
-Supported formats:
-
-  * **[TOML][]**, identified by '`+++`'.
-  * **[YAML][]**, identified by '`---`'.
-  * **[JSON][]**, a single JSON object which is surrounded by '`{`' and '`}`', each on their own line.
-
-[TOML]: https://github.com/toml-lang/toml "Tom's Obvious, Minimal Language"
-[YAML]: http://www.yaml.org/ "YAML Ain't Markup Language"
-[JSON]: http://www.json.org/ "JavaScript Object Notation"
 
 ### TOML Example
 
