@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Home on Toilette sèches à séparation </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://roboticbentqueryicoatbog.github.io/sec/categories/home/index.xml/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Fri, 23 Jan 2015 11:34:59 CET</updated>
+    
+    <item>
+      <title>first</title>
+      <link>http://roboticbentqueryicoatbog.github.io/sec/home/presentation/</link>
+      <pubDate>Fri, 23 Jan 2015 11:34:59 CET</pubDate>
+      
+      <guid>http://roboticbentqueryicoatbog.github.io/sec/home/presentation/</guid>
+      <description>
+
+&lt;p&gt;The &lt;strong&gt;front matter&lt;/strong&gt; is one of the features that gives Hugo its strength. It enables
+you to include the meta data of the content right with it. Hugo supports a few
+different formats, each with their own identifying tokens.&lt;/p&gt;
+
+&lt;p&gt;Supported formats:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/toml-lang/toml&#34; title=&#34;Tom&#39;s Obvious, Minimal Language&#34;&gt;TOML&lt;/a&gt;&lt;/strong&gt;, identified by &amp;lsquo;&lt;code&gt;+++&lt;/code&gt;&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.yaml.org/&#34; title=&#34;YAML Ain&#39;t Markup Language&#34;&gt;YAML&lt;/a&gt;&lt;/strong&gt;, identified by &amp;lsquo;&lt;code&gt;---&lt;/code&gt;&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.json.org/&#34; title=&#34;JavaScript Object Notation&#34;&gt;JSON&lt;/a&gt;&lt;/strong&gt;, a single JSON object which is surrounded by &amp;lsquo;&lt;code&gt;{&lt;/code&gt;&amp;rsquo; and &amp;lsquo;&lt;code&gt;}&lt;/code&gt;&amp;rsquo;, each on their own line.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;TOML Example&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+title = &amp;quot;spf13-vim 3.0 release and new website&amp;quot;
+description = &amp;quot;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&amp;quot;
+tags = [ &amp;quot;.vimrc&amp;quot;, &amp;quot;plugins&amp;quot;, &amp;quot;spf13-vim&amp;quot;, &amp;quot;vim&amp;quot; ]
+date = &amp;quot;2012-04-06&amp;quot;
+categories = [
+  &amp;quot;Development&amp;quot;,
+  &amp;quot;VIM&amp;quot;
+]
+slug = &amp;quot;spf13-vim-3-0-release-and-new-website&amp;quot;
++++
+
+Content of the file goes Here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;YAML Example&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;spf13-vim 3.0 release and new website&amp;quot;
+description: &amp;quot;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&amp;quot;
+tags: [ &amp;quot;.vimrc&amp;quot;, &amp;quot;plugins&amp;quot;, &amp;quot;spf13-vim&amp;quot;, &amp;quot;vim&amp;quot; ]
+date: &amp;quot;2012-04-06&amp;quot;
+categories:
+  - &amp;quot;Development&amp;quot;
+  - &amp;quot;VIM&amp;quot;
+slug: &amp;quot;spf13-vim-3-0-release-and-new-website&amp;quot;
+---
+
+Content of the file goes Here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;JSON Example&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &amp;quot;title&amp;quot;: &amp;quot;spf13-vim 3.0 release and new website&amp;quot;,
+    &amp;quot;description&amp;quot;: &amp;quot;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&amp;quot;,
+    &amp;quot;tags&amp;quot;: [ &amp;quot;.vimrc&amp;quot;, &amp;quot;plugins&amp;quot;, &amp;quot;spf13-vim&amp;quot;, &amp;quot;vim&amp;quot; ],
+    &amp;quot;date&amp;quot;: &amp;quot;2012-04-06&amp;quot;,
+    &amp;quot;categories&amp;quot;: [
+        &amp;quot;Development&amp;quot;,
+        &amp;quot;VIM&amp;quot;
+    ],
+    &amp;quot;slug&amp;quot;: &amp;quot;spf13-vim-3-0-release-and-new-website&amp;quot;,
+}
+
+Content of the file goes Here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Variables&lt;/h2&gt;
+
+&lt;p&gt;There are a few predefined variables that Hugo is aware of and utilizes. The user can also create
+any variable they want to. These will be placed into the &lt;code&gt;.Params&lt;/code&gt; variable available to the templates.
+Field names are always normalized to lowercase (e.g. &lt;code&gt;camelCase: true&lt;/code&gt; is available as &lt;code&gt;.Params.camelcase&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Required variables&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;title&lt;/strong&gt; The title for the content&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;description&lt;/strong&gt; The description for the content&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;date&lt;/strong&gt; The date the content will be sorted by&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;taxonomies&lt;/strong&gt; These will use the field name of the plural form of the index (see tags and categories above)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Optional variables&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;redirect&lt;/strong&gt; Mark the post as a redirect post&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;draft&lt;/strong&gt; If true, the content will not be rendered unless &lt;code&gt;hugo&lt;/code&gt; is called with &lt;code&gt;--buildDrafts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;publishdate&lt;/strong&gt; If in the future, content will not be rendered unless &lt;code&gt;hugo&lt;/code&gt; is called with &lt;code&gt;--buildFuture&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;type&lt;/strong&gt; The type of the content (will be derived from the directory automatically if unset)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;weight&lt;/strong&gt; Used for sorting&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;markup&lt;/strong&gt; &lt;em&gt;(Experimental)&lt;/em&gt; Specify &lt;code&gt;&amp;quot;rst&amp;quot;&lt;/code&gt; for reStructuredText (requires
+        &lt;code&gt;rst2html&lt;/code&gt;) or &lt;code&gt;&amp;quot;md&amp;quot;&lt;/code&gt; (default) for Markdown&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;slug&lt;/strong&gt; The token to appear in the tail of the URL,
+&lt;em&gt;or&lt;/em&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;url&lt;/strong&gt; The full path to the content from the web root.&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;If neither &lt;code&gt;slug&lt;/code&gt; or &lt;code&gt;url&lt;/code&gt; is present, the filename will be used.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_6&#34;&gt;Configure Blackfriday rendering&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible to set some options for Markdown rendering in the page&amp;rsquo;s front matter, as an override to the site wide configuration.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;{{&amp;lt; ref &amp;quot;overview/configuration.md#configure-blackfriday-rendering&amp;quot; &amp;gt;}}&#34;&gt;Configuration&lt;/a&gt; for more.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
