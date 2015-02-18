@@ -1,6 +1,64 @@
 body {
   font-family: 'Arial', Helvetica, sans-serif;
-  background: #f4f4f4;
+  background: #f4f4f4;margin: 0 0 0 0;
+
+}
+header{
+  width:80%;
+  display:block; 
+margin: 0 auto ;}
+
+
+    #owl-example .item img{
+    display: block;
+    width: 80%;
+    height:400px;
+    min-height: 400px;
+    max-height: :400px;
+    margin: 0 auto ;
+    }
+
+
+
+#header {
+    height: 80px;
+    //padding: 26px 0px 0px;
+}
+#logo {
+
+//padding: 18px 8px;
+//width: 80%;
+//font: bold 20px Arial, Helvetica;
+//  margin: 0 auto ;
+// position: relative;
+//  box-shadow: 0 2px 2px #112209;
+//background:  url(../img/logo.png) no-repeat ;
+
+//background: url(../img/logo.png) no-repeat scroll left top transparent;
+//display: inline-block;
+//width: 338px;
+//height: 57px;
+//position: absolute;
+
+}
+#logo-text{
+//float: center;
+font: bold 20px Arial, Helvetica;
+
+text-transform: uppercase;
+//margin-top: 30px;
+padding: 30px 20px;
+margin:  0px 207px;
+
+min-width: 380px;
+}
+#logo-img {
+
+    width: 207px;
+    height: 50px;
+    position: absolute;
+    box-shadow: 0 2px 2px #112209;
+
 }
 
 #menu,
@@ -11,15 +69,18 @@ body {
 }
 
 #menu {
-  width: 90%;
-  margin: 60px auto;
-  border: 1px solid #335511;
+min-width: 550px;  
+
+// position: fixed;
+  
   background: linear-gradient(#335511, #112209);
   /*background: url(../img/hautpage.png);
 
+
   background-size: 100% auto; */
-  border-radius: 6px;
-  box-shadow: 0 2px 2px #ccc;
+  //border-radius: 6px;
+
+  box-shadow: 0 2px 2px #112209;
 }
 
 #menu:before,
@@ -32,6 +93,7 @@ body {
 
 #menu li {
   float: left;
+
   /*background: url(../img/hautpage.png) ;*/
   background-size: 100% auto; 
   position: relative;
@@ -39,22 +101,22 @@ body {
 
 #menu a {
   float: left;
-  padding: 12px 30px;
+  padding: 18px 8px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font: bold 12px Arial, Helvetica;
+  font: bold 11px Arial, Helvetica;
 }
 
 #menu ul {
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 38px;
+  top: 28px;
   left: 0;
   z-index: 1;
-  background: linear-gradient(#335511, #112209);
+  background: linear-gradient(#446622, #223311);
   box-shadow: 0 -1px 0 rgba(255,255,255,.3);
   border-radius: 3px;
   transition: all .2s ease-in-out;
@@ -68,14 +130,14 @@ body {
 
 #menu ul ul {
   top: 0;
-  left: 150px;
+  left: 200px;
   margin: 0 0 0 20px;
   box-shadow: 0 -1px 0 rgba(255,255,255,.3);
 }
 
 #menu ul a {
   padding: 10px;
-  width: 130px;
+  width: 230px;
   display: block;
   white-space: nowrap;
   float: none;
@@ -105,7 +167,49 @@ body {
 }
 
 #menu-trigger { /* Hide Initially */ display: none; }
+
+#content {
+  left: 0px; top: 0px;
+ position: relative;
+     width: 80%;
+     margin: 0 auto ;
+
+}
+
+#background {
+  width: 100%;
+min-width: 550px;
+    //position: relative; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+  min-width: 550px;
+    width: 100%; 
+    height: 100%; 
+}
+
  @media(max-width: 700px) {
+#background {
+ margin: 0 auto;
+
+  
+    height: auto; 
+  width: 100%;
+  position: relative; 
+left: 0px; 
+    top: 0px; 
+ 
+
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width: 100%; 
+    height: 100%; 
+}
 
 #menu-wrap { position: relative; }
 
@@ -190,4 +294,99 @@ body {
 }
 
 #menu ul a { background: none !important; }
+#content {
+  left: 0px; top: 0px;
+ position: relative;
+     width: auto;
+     margin: 0 10px ;
+
 }
+}
+
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0;
+}/*
+img { max-width: 100%; height: auto; }
+*/
+#banner {
+
+ left: 0px; top: 0px;
+    background: url(../img/banner.png);
+   background-repeat: no-repeat;
+background-position: center center;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+
+
+ //   background-size: cover; 
+}
+ #banner header
+   {left: 0px; top: 0px;
+     position: fixed; 
+      box-shadow: none;
+       z-index: -1;
+   }
+ #banner h1 {
+  margin: 0 0 0 0;
+  position: relative; 
+     left: 0px; top: 40px;
+}
+@media only screen and (max-device-width: 480px) {
+    td[class="headercell"] {
+        background-image: url(images/header-325.png);
+        width: 325px !important;
+        height: 115px !important;
+    }
+    td[class="headercell"] img { 
+        display: none; 
+    }
+}
+
+
+
+
+
+
+.headerBg {
+  left: 0px; top: 0px;  
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+/*
+
+@media screen and (max-width: 768px)
+{
+   #banner > img
+    {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 480px)
+{
+ 
+   #banner
+   {
+      background-image: url("../img/mobile-banner.png");
+   }
+ }
+
+@media only screen and (min-width : 481px)
+{
+   #banner
+   {
+      background-image: url("../img/banner.png");
+   }
+}
+*/

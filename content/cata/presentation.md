@@ -5,98 +5,81 @@ title = "presentation"
 categories = ["catalogue"]
 categories_weight = 10
 +++
+<tbody>
 
-The **front matter** is one of the features that gives Hugo its strength. It enables
-you to include the meta data of the content right with it. Hugo supports a few
-different formats, each with their own identifying tokens.
+<h2>Bienvenue sur notre site: <a href="http://www.toilettes-seches-a-separation.fr">www.toilettes-seches-a-separation.fr</a></h2>
 
-Supported formats:
-
-  * **[TOML][]**, identified by '`+++`'.
-  * **[YAML][]**, identified by '`---`'.
-  * **[JSON][]**, a single JSON object which is surrounded by '`{`' and '`}`', each on their own line.
-
-[TOML]: https://github.com/toml-lang/toml "Tom's Obvious, Minimal Language"
-[YAML]: http://www.yaml.org/ "YAML Ain't Markup Language"
-[JSON]: http://www.json.org/ "JavaScript Object Notation"
-
-### TOML Example
-
-    +++
-    title = "spf13-vim 3.0 release and new website"
-    description = "spf13-vim is a cross platform distribution of vim plugins and resources for Vim."
-    tags = [ ".vimrc", "plugins", "spf13-vim", "vim" ]
-    date = "2012-04-06"
-    categories = [
-      "Development",
-      "VIM"
-    ]
-    slug = "spf13-vim-3-0-release-and-new-website"
-    +++
-    
-    Content of the file goes Here
-
-### YAML Example
-
-    ---
-    title: "spf13-vim 3.0 release and new website"
-    description: "spf13-vim is a cross platform distribution of vim plugins and resources for Vim."
-    tags: [ ".vimrc", "plugins", "spf13-vim", "vim" ]
-    date: "2012-04-06"
-    categories:
-      - "Development"
-      - "VIM"
-    slug: "spf13-vim-3-0-release-and-new-website"
-    ---
-    
-    Content of the file goes Here
-
-### JSON Example
-
-    {
-        "title": "spf13-vim 3.0 release and new website",
-        "description": "spf13-vim is a cross platform distribution of vim plugins and resources for Vim.",
-        "tags": [ ".vimrc", "plugins", "spf13-vim", "vim" ],
-        "date": "2012-04-06",
-        "categories": [
-            "Development",
-            "VIM"
-        ],
-        "slug": "spf13-vim-3-0-release-and-new-website",
-    }
-    
-    Content of the file goes Here
-
-## Variables
-
-There are a few predefined variables that Hugo is aware of and utilizes. The user can also create
-any variable they want to. These will be placed into the `.Params` variable available to the templates.
-Field names are always normalized to lowercase (e.g. `camelCase: true` is available as `.Params.camelcase`).
-
-### Required variables
-
-* **title** The title for the content
-* **description** The description for the content
-* **date** The date the content will be sorted by
-* **taxonomies** These will use the field name of the plural form of the index (see tags and categories above)
-
-### Optional variables
-
-* **redirect** Mark the post as a redirect post
-* **draft** If true, the content will not be rendered unless `hugo` is called with `--buildDrafts`
-* **publishdate** If in the future, content will not be rendered unless `hugo` is called with `--buildFuture`
-* **type** The type of the content (will be derived from the directory automatically if unset)
-* **weight** Used for sorting
-* **markup** *(Experimental)* Specify `"rst"` for reStructuredText (requires
-            `rst2html`) or `"md"` (default) for Markdown
-* **slug** The token to appear in the tail of the URL,
-   *or*<br>
-* **url** The full path to the content from the web root.<br>
-
-*If neither `slug` or `url` is present, the filename will be used.*
-
-## Configure Blackfriday rendering
-
-It's possible to set some options for Markdown rendering in the page's front matter, as an override to the site wide configuration.
-
-See [Configuration]({{< ref "overview/configuration.md#configure-blackfriday-rendering" >}}) for more.
+<tr>
+<td><img style="float: left; margin: 10px;" title="Toilette sèche à séparation des urines" src="web_images/100_3749.jpg" alt="Toilette sèche à séparation des urines" width="213" height="289" /><strong>Située en Maurienne dans le département de la Savoie, notre entreprise est spécialisée en assainissement écologique (<a href="http://http://www.hydroterra.fr/index.php?p=1_6_ETUDE-PHYTOEPURATION">épuration par les plantes</a> et toilettes sèches). <br /><br /></strong>Nous concevons et fabriquons plusieurs modèles de toilettes sèches: des <a href="index.php?p=1_6_Toilettes-s-ches-liti-re">toilettes sèches à litière</a>, des <a href="index.php?p=1_18_ACCUEIL">toilettes sèches à séparation des urines "à la source"</a>, avec ou sans réserves de copeaux, des toilettes sèches en pin massif ou en pin 3 plis.<br /><br />Nous distribuons également des toilettes sèches des marques suédoises: <a href="index.php?p=1_21_Toilettes-s-ches-liti-re">Separett</a>, <a href="index.php?p=1_35_Toilettes-s-ches-s-paration">Clivus Multrum</a> et <a href="index.php?p=1_28_ACCUEIL">Wost Man Ecology</a>, les toilettes sèches de la marque finlandaise: <a href="index.php?p=1_2_POURQUOI-COMMENT">Biolan</a> et de la marque française: <a href="index.php?p=1_34_CATALOGUE">Ecodoméo</a>.<strong><br /></strong>
+<p>Nous vous proposons une large gamme de toilettes sèches afin de pouvoir vous proposer <strong>la toilette sèche</strong> la mieux adaptée à votre  situation, vos habitudes, etc.. . A chaque situation, il existe une  toilette sèche.</p>
+<p>Sur notre <a href="index.php?p=1_31_CATALOGUE">catalogue</a>,  vous trouverez tous les modèles que nous proposons, nous réalisons  également des modèles sur-mesure.</p>
+<p>Nous sommes à votre disposition pour toutes questions, nous vous répondons dans les plus brefs délais: N'hésitez pas: <a href="index.php?p=1_3_CONTACT">contactez-nous</a>.</p>
+</td>
+</tr>
+</tbody>
+<table style="background-color: #60311b; height: 280px; width: 700px;" border="1">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="6"><a href="index.php?p=1_4_Toilettes-s-ches-s-paration-des-urines"><span style="color: #00ff00;"><span style="font-family: arial,helvetica,sans-serif;"><strong><span style="font-size: 18px;">Les toilettes sèches à séparation des urines à la source <br />Fabrication artisanale et locale</span></strong></span><span style="font-family: arial,helvetica,sans-serif;"><strong>&nbsp;</strong></span></span></a><span style="font-family: arial,helvetica,sans-serif;"><strong><a href="index.php?p=1_4_Toilettes-s-ches-s-paration-des-urines"> </a><br /></strong></span></td>
+</tr>
+<tr>
+<td><a href="index.php?p=1_18_ACCUEIL"><img title="Toilette sèche à séparation des urines: SEP" src="web_images/100_3369.jpg" alt="La SEP" width="99" height="134" /></a></td>
+<td><a href="index.php?p=1_18_ACCUEIL"><span style="font-family: arial,helvetica,sans-serif; color: #000000;"><span style="color: #ffffff;"><strong>La SEP</strong></span><br /><br /><br /><span style="color: #ffcc99;">Toilette sèche cube en pin à séparateur d'urine</span></span><br /><br /><span style="font-family: arial,helvetica,sans-serif; color: #ffffff;"><em><strong>A partir de 485 € </strong></em></span></a><br /></td>
+<td><a href="index.php?p=1_37_CATALOGUE"><img title="Toilette sèche à séparation des urines: Big SEP" src="web_images/100_3736.jpg" alt="" width="94" height="127" /></a></td>
+<td><a href="index.php?p=1_37_CATALOGUE"><span style="font-family: arial,helvetica,sans-serif; color: #000000;"><span style="color: #ffffff;"><strong>La Big SEP</strong></span><br /><br /><br /><span style="color: #ffcc99;">Toilette sèche à réserve de copeaux et séparation des urines</span></span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><strong><em>A partir de 655 € </em></strong></span></a><br /></td>
+<td><a href="index.php?p=1_1_ACCUEIL"><img title="Toilette sèche à séparation des urines: BS-res" src="web_images/100_3669.jpg" alt="" width="90" height="118" /></a></td>
+<td><span style="font-family: arial,helvetica,sans-serif; color: #ffffff;"><strong>La Big SEP à réservoir</strong> (BS-RES)</span><br /><br /><span style="color: #ffcc99;"><span style="font-family: arial,helvetica,sans-serif;">Toilette sèche à réserve de copeaux et réservoir d'urine</span> intégré</span><br /><br /><a href="index.php?p=1_3_CONTACT"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>Tarif: nous contacter</strong></em></span></a><br /></td>
+</tr>
+</tbody>
+</table>
+<table class="modulesubframe" style="background-color: #60311b; height: 380px; width: 700px;" border="1">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="4"><span style="font-family: arial,helvetica,sans-serif;"><a href="index.php?p=1_4_Toilettes-s-ches-s-paration-des-urines"><span style="color: #00ff00;"><span style="font-size: 18px;"><strong>Les toilettes sèches à séparation des urines à la source<br />Modèles manufacturés</strong></span><strong>&nbsp;</strong></span></a><span style="color: #ffffff;"><strong> <br /></strong></span></span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial,helvetica,sans-serif;"><a href="index.php?p=1_21_Catalogue"><img style="display: block; margin-left: auto; margin-right: auto;" title="Toilette sèche à séparation des urines: Separett Villa" src="web_images/villa9010.jpg" alt="" width="94" height="94" /></a>&nbsp;</span></td>
+<td><a href="index.php?p=1_21_Toilettes-s-ches-liti-re"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><strong>Separett Villa</strong><strong>&nbsp;</strong></span><br /><br /><span style="color: #ffcc99; font-family: arial,helvetica,sans-serif;">Toilette sèche suédoise à séparation des urines </span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>A partir de 769 € </strong></em></span></a><br /></td>
+<td><span style="font-family: arial,helvetica,sans-serif;"><a href="index.php?p=1_25_toilettes-s-ches-manufactur-es"><img style="display: block; margin-left: auto; margin-right: auto;" title="Toilette sèche à séparation des urines: Separett WE" src="web_images/7393553710506-30016-g_torp-isak_whit.jpg" alt="" width="90" height="90" /></a>&nbsp;</span></td>
+<td><a href="index.php?p=1_32_Toilettes-s-ches-composteur"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><strong>Separett Week End</strong></span><br /><br /><span style="color: #ffcc99; font-family: arial,helvetica,sans-serif;">Toilette sèche à séparation des urines premier prix </span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>499 €</strong></em></span></a><br /></td>
+</tr>
+<tr>
+<td><span style="font-family: arial,helvetica,sans-serif;">&nbsp;<a href="index.php?p=1_2_toilettes-s-ches-s-paration"><img style="border: 0px none; display: block; margin-left: auto; margin-right: auto;" title="Toilette sèche à séparation des urines: Naturum" src="web_images/9279457.jpg" alt="" width="105" height="100" /></a></span></td>
+<td><a href="index.php?p=1_1_ACCUEIL"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;">&nbsp;</span></a><a href="index.php?p=1_2_POURQUOI-COMMENT"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><strong>Biolan Naturum</strong></span><br /><br /><span style="color: #ffcc99; font-family: arial,helvetica,sans-serif;">Toilette sèche à séparation des urines et précompostage</span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><strong><em>1499 €</em></strong></span></a><br /></td>
+<td><span style="font-family: arial,helvetica,sans-serif;">&nbsp;<a href="index.php?p=1_24_toilettes-s-ches-liti-re"><img style="display: block; margin-left: auto; margin-right: auto;" title="Toilette sèche à séparation des urines: Biolan" src="web_images/8792325_orig.jpg" alt="" width="70" height="94" /></a></span></td>
+<td><a href="index.php?p=1_33_BON-DE-COMMANDE"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><strong>&nbsp;Biolan toilette à séparation</strong></span><br /><br /><span style="color: #ffcc99; font-family: arial,helvetica,sans-serif;">Toilette sèche à séparation des urines et réservoir à litière</span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>699 €</strong></em></span></a><br /></td>
+</tr>
+</tbody>
+</table>
+<br /> 
+<table class="topbar1bg" style="background-color: #60311b; height: 280px; width: 700px;" border="1">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="6"><a href="index.php?p=1_6_Toilettes-s-ches-liti-re"><span style="color: #00ff00; font-family: arial,helvetica,sans-serif;"><strong><span style="font-size: 18px;">Les toilettes sèches à litière - fabrication artisanale et locale</span></strong></span></a></td>
+</tr>
+<tr>
+<td><a href="index.php?p=1_15_ACCUEIL"><span style="font-family: arial,helvetica,sans-serif;"><img title="toilette sèche à litière (TLB): la Box" src="web_images/100_3626.jpg" alt="" width="94" height="126" /></span></a></td>
+<td><a href="index.php?p=1_39_ACCUEIL"><strong><span style="font-family: arial,helvetica,sans-serif; color: #ffffff;">La Box</span></strong><br /><br /><span style="font-family: arial,helvetica,sans-serif; color: #ffcc99;">Toilette sèche à litière, en pin 3 plis</span><br /><br /><strong><em><span style="font-family: arial,helvetica,sans-serif; color: #ffffff;">A partir de 305 €</span></em></strong></a></td>
+<td><a href="index.php?p=1_16_CATALOGUE"><span style="font-family: arial,helvetica,sans-serif;"><img title="toilette sèche à litière (TLB): la Big Box" src="web_images/100_3749.jpg" alt="" width="90" height="118" /></span></a></td>
+<td><a href="index.php?p=1_40_CATALOGUE"><strong><span style="font-family: arial,helvetica,sans-serif; color: #ffffff;">La Big Box</span></strong><br /><br /><span style="font-family: arial,helvetica,sans-serif; color: #ffcc99;">Toilette sèche à litière à réserve de copeaux</span><br /><br /><strong><em><span style="font-family: arial,helvetica,sans-serif; color: #ffffff;">A partir de 505 €</span></em></strong></a></td>
+<td><span style="font-family: arial,helvetica,sans-serif;"><img title="toilette sèche à litière (TLB): la Big Hexa" src="web_images/100_3560.jpg" alt="" width="88" height="117" /></span></td>
+<td><span style="font-family: arial,helvetica,sans-serif; color: #ffffff;">La Big Hexa</span><br /><br /><span style="font-family: arial,helvetica,sans-serif; color: #ffcc99;">Toilette sèche hexagonale à réserve de copeaux</span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong><a href="index.php?p=1_3_CONTACT">Tarif: nous contacter</a></strong></em></span></td>
+</tr>
+</tbody>
+</table>
+<br /> 
+<table class="modulesubframe" style="background-color: #60311b; height: 280px; width: 700px;" border="1">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="6"><span style="font-family: arial,helvetica,sans-serif;"><a href="index.php?p=1_30_Toilettes-s-ches-composteur"><span style="color: #00ff00;"><span style="font-size: 18px;"><strong>Les toilettes sèches à gros volume de stockage/compostage</strong></span><em><strong>&nbsp;</strong></em></span></a><span style="color: #ffffff;"><strong><em> </em></strong></span><span style="color: #ffffff;"><em><strong><br /></strong></em></span></span></td>
+</tr>
+<tr>
+<td><a href="index.php?p=1_34_CATALOGUE"><span style="font-family: arial,helvetica,sans-serif;"><img style="border: 1px solid black;" title="Toilette sèche ECODOMEO" src="web_images/zirconepti.jpg" alt="" width="93" height="81" /></span></a></td>
+<td><a href="index.php?p=1_34_CATALOGUE"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>Toilette sèche Ecodoméo</strong></em></span><br /><br /><span style="color: #ffcc99; font-family: arial,helvetica,sans-serif;">Toilette sèche à séparation, tapis roulant</span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>A partir de 2260 €</strong></em></span></a></td>
+<td><span style="font-family: arial,helvetica,sans-serif;"><a href="index.php?p=1_35_Toilettes-s-ches-s-paration-des-urines"><img style="border: 1px solid black;" title="Toilette sèche CLIVUS MULTRUM" src="web_images/cuvette_cl400_open.jpg" alt="" width="86" height="114" /></a></span></td>
+<td><a href="index.php?p=1_35_Toilettes-s-ches-s-paration-des-urines"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><strong><em>Toilette sèche Clivus Multrum</em></strong></span><br /><br /><span style="color: #ffcc99; font-family: arial,helvetica,sans-serif;">Toilette sèche à composteur</span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>A partir de 3080 €</strong></em></span></a></td>
+<td><span style="font-family: arial,helvetica,sans-serif;"><a href="index.php?p=1_28_toilettes-s-ches-liti-re"><img style="border: 1px solid black;" title="Toilette sèche Ecodry de Wost Man Ecology" src="web_images/100_3389.jpg" alt="" width="83" height="110" /></a></span></td>
+<td><a href="index.php?p=1_28_ACCUEIL"><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>Toilette sèche Wost Man Ecology</strong></em></span><br /><br /><span style="color: #ffcc99; font-family: arial,helvetica,sans-serif;">Toilette sèche à séparation des urines à la source</span><br /><br /><span style="color: #ffffff; font-family: arial,helvetica,sans-serif;"><em><strong>A partir de 889 €</strong></em></span></a></td>
+</tr>
+</tbody>
+</table>

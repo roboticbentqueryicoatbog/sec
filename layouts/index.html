@@ -2,64 +2,117 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>NOWC: Toilette sèches à séparation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOWC: Toilette sèches à séparation</title>
+
+
+
+    
+  
+
 
 
 <link href="/css/style.css" rel="stylesheet" media="all" type="text/css"> 
 </head>
 
 <body>
-<h1 style="margin:150px auto 20px auto; text-align:center">NOWC: Toilette sèches à séparation</h1>
-<nav id="menu-wrap">
+  <header >
+   <!--  <div id="header">
+    <img src="/img/banner.png" alt="" class="headerBg" />
+   
+   
+</div>
+
+    --> 
+<!-- <div  >
+
+ <h1 id="logo"><img src="/img/logo.png" id="logo-img">
+ NOWC: Toilette sèches à séparation </h1>
+ </div>  --> 
+ <div id="header" >
+
+ <h1><img src="/img/logo.png" id="logo-img">
+ </h1><div id="logo-text" >NOWC: Toilette sèches à séparation</div>    
+ </div>        
+   
+<!--style="margin:150px auto 20px auto;"-->
+<nav   id="menu-wrap">
   <ul id="menu">
+    
     <li><a href="#">Accueil</a></li>
-    <li><a href="/cata/presentation">Liste de produit</a>
+    <li><a href="/cata/presentation">Nos Produits</a>
       <ul>
-        <li><a href="/cata/second">Second</a></li>
+        <li><a href="#">Toilettes sèches à séparation</a>
+          <ul>
+            <li><a href="#">Modèle artisanal: la Sep</a></li>
+            <li><a href="#">Modèle artisanal: la BIG Sep</a></li>
+            <li><a href="#">Les toilettes sèches SEPARETT Villa</a></li>
+            <li><a href="#">Les toilettes sèches SEPARETT Week End</a></li>
+            <li><a href="#">Les toilettes sèches Séparante de BIOLAN</a></li>
+            <li><a href="#">Les toilettes sèches Naturum BIOLAN</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Toilettes sèches à litière</a>
+          <ul>
+            <li><a href="#">Modèle artisanal: la BOX</a></li>
+            <li><a href="#">Modèle artisanal: la BIG BOX</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Toilettes sèches à composteur</a>
+          <ul>
+            <li><a href="#">Les toilettes sèches WOST MAN ECOLOGY</a></li>
+            <li><a href="#">Les toilettes sèches ECODOMEO</a></li>
+            <li><a href="#">Les toilettes sèches Clivus Multrum</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Catalogue</a>
+        </li>
       </ul>
     </li>  
-    <li> <a href="#">Services</a>
-      <ul>
-        <li><a href="#">Web Design</a>
-          <ul>
-            <li><a href="#">HTML5/CSS3</a></li>
-            <li><a href="#">jQuery</a></li>
-            <li><a href="#">Photoshop</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Web Programming</a>
-          <ul>
-            <li><a href="#">Go</a></li>
-            <li><a href="#">Ruby</a></li>
-            <li><a href="#">Python</a></li>
-          </ul>
-        </li>
-      </ul>
+    <li> <a href="#">Bon de Commande</a>
     </li>
-    <li><a href="#">Contact</a>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Linkedin</a></li>
-        <li><a href="#">Google Plus</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Blog</a></li>
+    <li><a href="#">Liens/Documentation</a>
+      
+    <li><a href="#">Contact/Devis</a></li>
   </ul>
-</nav>
+</nav> 
 
+<!-- <div id="background">
+      <img src="/img/banner.png" class="stretch" alt="" />
+</div> -->
+
+
+
+
+
+</header>
+<div id="owl-example" class="owl-carousel owl-theme">
+     <div class="item"><img src="/img/banner.png" ></div>
+    <div class="item"><img src="/img/1.jpg" ></div>
+    <div class="item"><img src="/img/2.jpg" ></div>
+    <div class="item"><img src="/img/3.jpg" ></div>
+    <div class="item"><img src="/img/4.jpg" ></div>
+     
+    </div>
 {{ if isset .Site.Taxonomies.categories "catalogue" }}
 {{ range first 1 .Site.Taxonomies.categories.catalogue.Pages }}
-<article>
-<h2 class="important-header">{{ .Title }}</h2>
-{{ .Content }}
+<article id="content">
+<!-- <h2 >{{ .Title }}</h2>
+ -->
+ {{ .Content }}
 <hr>
 </article>
 {{ end }}
 {{ end }}
 <script src="/js/jquery-2.1.3.min.js"></script>
 <script src="/js/script.js"></script>
-
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="/css/owl.theme.css">
+     
+    <!-- Include js plugin -->
+    <script src="/js/owl.carousel.js"></script>
 </body>
 </html>
